@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <title>Home</title>
+    <title>Dashboard - Mi Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+    <div class="dashboard-container">
+      <header class="dashboard-header">
+        <div class="profile-section">
+          <div class="profile-avatar">
+            <img src="https://via.placeholder.com/120x120/667eea/ffffff?text=👤" alt="Avatar" />
+          </div>
+          <h1 class="profile-name">Mi Portfolio</h1>
+          <p class="profile-bio">Desarrollador Web Full Stack</p>
+        </div>
+      </header>
+      
+      <main class="dashboard-links">
+        <a href="seccion1.html" class="link-button seccion-1">
+          <span class="link-icon">🚀</span>
+          <span class="link-text">Sección 1 - Desarrollo</span>
+        </a>
+        
+        <a href="seccion2.html" class="link-button seccion-2">
+          <span class="link-icon">💻</span>
+          <span class="link-text">Sección 2 - Diseño</span>
+        </a>
+        
+        <a href="seccion3.html" class="link-button seccion-3">
+          <span class="link-icon">🎨</span>
+          <span class="link-text">Sección 3 - Creatividad</span>
+        </a>
+        
+        <a href="seccion4.html" class="link-button seccion-4">
+          <span class="link-icon">📱</span>
+          <span class="link-text">Sección 4 - Tecnología</span>
+        </a>
+      </main>
+      
+      <footer class="dashboard-footer">
+        <p>© 2024 - Creado sin React, solo HTML, CSS y JavaScript puro</p>
+      </footer>
+    </div>
   </body>
 </html>
